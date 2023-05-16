@@ -1,0 +1,27 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": "standard-with-typescript",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "project": "./tsconfig.json",
+    "sourceType": "module"
+  },
+  "ignorePatterns": [
+    "build/",
+    "coverage",
+    "dist",
+    "node_modules/"
+  ],
+  "overrides": [],
+  "rules": {
+    "@typescript-eslint/comma-dangle": ["error","always-multiline"],
+    "comma-dangle": "off",
+    "@typescript-eslint/array-type": ["warn",{"default": "array","readonly": "array"}],
+    "@typescript-eslint/no-unsafe-argument": "error",
+    "arrow-parens": ["warn","always"],
+    "padded-blocks": "off"
+  }
+}
